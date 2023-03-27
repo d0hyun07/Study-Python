@@ -26,4 +26,9 @@ print(a.solv(2))
 
 print(mod2.add(mod2.PI,4.4))
 
+#다른 파일에서 모듈 불러오기
+import sys
+sys.path
+
+
 

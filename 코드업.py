@@ -1,6 +1,5 @@
-a,b = input().split()
+a, b, d, c = map(int, input().split())
+for i in range(c - 1):
+    a = a * b + d
 
-c = bool(int(a))
-d = bool(int(b))
-
-print(((not c) and (not d))or (c and d))
+print(a)

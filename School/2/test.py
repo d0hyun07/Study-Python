@@ -129,3 +129,25 @@ for i in range(c - 1):
     a = a * b
 
 print(a)
+
+# 파이썬 6090
+a, b, d, c = map(int, input().split())
+for i in range(c - 1):
+    a = a * b + d
+
+print(a)
+
+# 선생님 문제
+
+import random
+
+rn = random.randint(1, 100)
+count = 0
+while 1:
+    a = int(input())
+    count += 1
+    if a > rn:
+        print("down")
+    elif a < rn:
+        print("up")
+print(count)

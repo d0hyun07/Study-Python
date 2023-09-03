@@ -96,27 +96,27 @@
 
 # 설탕 과자 뽑기
 
-list = []
-h, w = int(input().split())
-for i in range(h + 1):
-    list.append([])
-    for j in range(w + 1):
-        list[i].append(0)
+# list = []
+# h, w = int(input().split())
+# for i in range(h + 1):
+#     list.append([])
+#     for j in range(w + 1):
+#         list[i].append(0)
 
-n = int(input())
+# n = int(input())
 
-for i in range(n + 1):
-    l, d, x, y = map(int(input().split()))
-    for j in range(l + 1):
-        if d == 0:
-            list[x][y] = 1
-            x += 1
-        elif d == 1:
-            list[x][y] = 1
-            y += 1
+# for i in range(n + 1):
+#     l, d, x, y = map(int(input().split()))
+#     for j in range(l + 1):
+#         if d == 0:
+#             list[x][y] = 1
+#             x += 1
+#         elif d == 1:
+#             list[x][y] = 1
+#             y += 1
 
 
-for i in range(h + 1):
-    for j in range(w + 1):
-        print(list[i][j], end=" ")
-    print()
+# for i in range(h + 1):
+#     for j in range(w + 1):
+#         print(list[i][j], end=" ")
+#     print()

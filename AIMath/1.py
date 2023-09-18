@@ -1,4 +1,4 @@
-import numpy as np
+# import numpy as np
 
 # A = {1,2,3}
 # B = {1,3,4}
@@ -42,36 +42,45 @@ import numpy as np
 # print(Vec(C))
 
 # 한파,눈,예보,일부,비,퇴근길,조심,그치다
-VA = np.array([1, 1, 2, 1, 1, 0, 0, 0])
-VB = np.array([0, 2, 1, 0, 0, 1, 1, 0])
-VC = np.array([1, 1, 1, 1, 3, 0, 0, 1])
+# VA = np.array([1, 1, 2, 1, 1, 0, 0, 0])
+# VB = np.array([0, 2, 1, 0, 0, 1, 1, 0])
+# VC = np.array([1, 1, 1, 1, 3, 0, 0, 1])
 
-print(VA)
-print(VB)
-print(VC)
+# print(VA)
+# print(VB)
+# print(VC)
 
-# TF
-print(VA + VB + VC)
-
-
-def Bin(X):
-    result = []
-    for i in X:
-        if i != 0:
-            result.append(1)
-        else:
-            result.append(0)
-    return np.array(result)
+# # TF
+# print(VA + VB + VC)
 
 
-# DF/n
-print((Bin(VA) + Bin(VB) + Bin(VC)) / 3)
+# def Bin(X):
+#     result = []
+#     for i in X:
+#         if i != 0:
+#             result.append(1)
+#         else:
+#             result.append(0)
+#     return np.array(result)
 
-# IDF
-IDF = 1 / ((Bin(VA) + Bin(VB) + Bin(VC)) / 3)
-print(IDF)
 
-# TF*IDF
-print(VA * IDF)
-print(VB * IDF)
-print(VC * IDF)
+# # DF/n
+# print((Bin(VA) + Bin(VB) + Bin(VC)) / 3)
+
+# # IDF
+# IDF = 1 / ((Bin(VA) + Bin(VB) + Bin(VC)) / 3)
+# print(IDF)
+
+# # TF*IDF
+# print(VA * IDF)
+# print(VB * IDF)
+# print(VC * IDF)
+
+# # IDF
+# IDF = 1 / ((Bin(VA) + Bin(VB) + Bin(VC)) / 3)
+# print(IDF)
+
+# # TF*IDF
+# print(VA * IDF)
+# print(VB * IDF)
+# print(VC * IDF)

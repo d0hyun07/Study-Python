@@ -13,23 +13,41 @@
 # print(dpList[-1])
 
 
-def jump(stairScore, i):
-    if i < 0:
-        return 0
-    if i == 0:
-        return stairScore[0]
-    if i == 1:
-        return stairScore[0] + stairScore[1]
-    
-    return max(jump(stairScore, i-3) + stairScore[i-1],
-               jump(stairScore, i-2) + stairScore[i])
 
-stairNumber = int(input())
-stairScore = [int(input()) for _ in range(stairNumber)]
 
-if stairNumber <= 2:
-    print(sum(stairScore))
-else:
-    result = max(jump(stairScore, stairNumber-1),
-                 jump(stairScore, stairNumber-2))
-    print(result)
+# def jump(stairScore, i):
+#     if i < 0:
+#         return 0
+#     if i == 0:
+#         return stairScore[0]
+#     if i == 1:
+#         return stairScore[0] + stairScore[1]
+
+#     return max(jump(stairScore, i-3) + stairScore[i-1],
+#                jump(stairScore, i-2) + stairScore[i])
+
+# stairNumber = int(input())
+# stairScore = [int(input()) for _ in range(stairNumber)]
+
+# if stairNumber <= 2:
+#     print(sum(stairScore))
+# else:
+#     result = max(jump(stairScore, stairNumber-1),
+#                  jump(stairScore, stairNumber-2))
+#     print(result)
+
+
+
+
+def jump(n):
+  if (n<1):
+    return 0
+  elif (n==1):
+    return 1
+  else:
+    return jump(n-1)+jump(n-2)+jump(n-3)
+
+
+n = int(input())
+answer = jump(n+1)
+print(answer)

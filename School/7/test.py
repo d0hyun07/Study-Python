@@ -41,11 +41,11 @@
 # print(s)
 
 #codeup1708
-a = int(input())
-b = list(map(int, input().split()))
-c = sorted(b, reverse=True)
-for i in range(a):
-      print(b[i],c.index(b[i])+1)
+# a = int(input())
+# b = list(map(int, input().split()))
+# c = sorted(b, reverse=True)
+# for i in range(a):
+#       print(b[i],c.index(b[i])+1)
 #codeup2001
 
 # pasta = []

@@ -1,4 +1,3 @@
-'''
 import time
 import random
 
@@ -22,7 +21,10 @@ for i in WORD_LIST:
       break
     if c==i[index]:
       correct += 1
-'''
 
-for i in enumerate(['A','B','C']):
-  print(i)
+total_len = len(i)
+c=correct/total_len*100
+e=(total_len-correct)/total_len*100
+speed=correct / end_time * 60
+
+print("속도 : {:0.2f} 정확도 : {:0.2f} 오타율 {:0.2f}".format(speed,c,e))

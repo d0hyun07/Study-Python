@@ -44,3 +44,22 @@ class name:
   def __init__(self,...):
           속성 정의
 '''
+
+
+class bssm:
+  def __init__(self,name,role):
+    self.school = '부소마고'
+    self.age = 17
+    self.role = role
+    self.name = name
+
+    
+
+
+  def intro(self):
+    print("안녕하세요, %s 에서 %s를 담당하고 있는 %d살 %s입니다."
+          %(self.school,self.role,self.age,self.name))
+    
+a = bssm('wdasd','asdaw')
+
+print(a)

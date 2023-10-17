@@ -45,7 +45,7 @@ class name:
           속성 정의
 '''
 
-
+'''
 class bssm:
   def __init__(self,name,role):
     self.school = '부소마고'
@@ -62,4 +62,55 @@ class bssm:
     
 a = bssm('wdasd','asdaw')
 
-print(a)
+a.intro()
+
+class Grade:
+  def __init__(self,name,score):
+    self.name = name
+    self.score = score
+  
+  def s_grade(self):
+    if self.score >=90:
+      self.grade = "A"
+    elif self.score >=80:
+      self.grade = "B"
+    else:
+      self.grade = "C"
+  
+  def __str__(self):
+    return "%s: %c 등급"%(self.name,self.grade)
+  
+b = Grade("도현",100)
+
+b.s_grade()
+
+print(b)
+'''
+
+class FishCakeMaker:
+  def __init__(self, **kwargs):
+    self.size=10
+    self.flavor = "팥"
+    self.price=100
+
+    if "size" in kwargs:
+      self.size = kwargs.get("size")
+    if "flavor" in kwargs:
+      self.flavor = kwargs.get("flavor")
+    if "price" in kwargs:
+      self.price = kwargs.get("price")
+
+  def show(self):
+    print("붕어빵 크기{}".format(self.size))
+    print("붕어빵 종류{}".format(self.flavor))
+    print("붕어빵 가격{}".format(self.price))
+    print("*"*30)
+
+
+fish1=FishCakeMaker()
+fish2=FishCakeMaker(size=10, price=300)
+fish3=FishCakeMaker(flavor="초콜렛", size=15)
+
+fish1.show()
+fish2.show()
+fish3.show()

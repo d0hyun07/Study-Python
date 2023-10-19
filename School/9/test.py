@@ -87,6 +87,10 @@ b.s_grade()
 print(b)
 '''
 
+
+
+
+'''
 class FishCakeMaker:
   def __init__(self, **kwargs):
     self.size=10
@@ -114,3 +118,17 @@ fish3=FishCakeMaker(flavor="초콜렛", size=15)
 fish1.show()
 fish2.show()
 fish3.show()
+'''
+
+
+class MarketGoods(FishCakeMaker):
+  def __init__(self, margin=1000, **kwrags):
+    super().__init__(**kwrags)
+    self.market_price = self.price + margin
+  
+  def show(self):
+    print(self.flavor,self.market_price)
+
+
+fish1 = MarketGoods(size=20, price=500)
+fish1.show()

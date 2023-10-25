@@ -149,3 +149,4 @@ print(b.lastname)
 a.lastname = "최"
 
 print(a.lastname)
+

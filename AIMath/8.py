@@ -15,3 +15,4 @@ x_list = np .arange(0, tlen, Ts)
 y = np.sin(2*np.pi*Fs*x_list)
 
 plt.plot(x_list[:300], y[:300], color = "blue")
+

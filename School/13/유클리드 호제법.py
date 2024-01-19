@@ -12,7 +12,7 @@ def gcd(n,m):
       gcd_v = j
   return gcd_v
 
-print(gcd(a, b))
+# print(gcd(a, b))
 
 
 def gcd_2(n, m):
